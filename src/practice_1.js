@@ -1,12 +1,9 @@
-/**
- * Created by danaekola on 28/08/15.
- */
-function Person(name,age){
-    this.name=name;
-    this.age=age;
+function Person(name, age){
+    this.name = name;
+    this.age = age;
+    this.introduce = function(){
+        return "My name is "+this.name+". I am "+this.age+" years old."
+    };
 }
-Person.prototype.introduce = function(){
-    return 'My name is '+ this.name+'. I am '+this.age+' years old.';
-};
-module.exports = Person;
 
+module.exports = Person;
