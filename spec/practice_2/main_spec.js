@@ -5,7 +5,7 @@ var sinon = require("sinon");
 var sinonChai = require("sinon-chai");
 var expect = chai.expect;
 chai.use(sinonChai);
-var Person = require("../../src/practice_2.js");
+var Person = require("../../src/practice_2/person.js");
 
 describe("Person", function(){
     it("should have field name and age", function(){
